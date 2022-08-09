@@ -87,7 +87,6 @@
 
         <TextView
             android:id="@+id/tvForgotPass"
-            android:onClick="forgotPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/etPass"
@@ -96,6 +95,7 @@
             android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginEnd="@dimen/_5sdp"
             android:layout_marginBottom="@dimen/_5sdp"
+            android:onClick="forgotPassword"
             android:text="Forgot Password?"
             android:textColor="@color/white"
             android:textStyle="bold" />
