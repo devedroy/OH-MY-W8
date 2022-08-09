@@ -21,6 +21,7 @@
 
         <TextView
             android:layout_width="match_parent"
+            android:onClick="searchNearby"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_10sdp"
             android:background="@drawable/rect_rounded_white"
@@ -32,6 +33,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:onClick="signIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rect_rounded_green"
