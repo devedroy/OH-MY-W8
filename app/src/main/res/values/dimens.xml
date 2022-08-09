@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txt_btn_paddingTop">@dimen/_5sdp</dimen>
+    <dimen name="txt_btn_paddingBottom">@dimen/_5sdp</dimen>
+    <dimen name="txt_btn_paddingStart">@dimen/_30sdp</dimen>
+    <dimen name="txt_btn_paddingEnd">@dimen/_30sdp</dimen>
+</resources>
