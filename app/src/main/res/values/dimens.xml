@@ -4,4 +4,6 @@
     <dimen name="txt_btn_paddingBottom">@dimen/_5sdp</dimen>
     <dimen name="txt_btn_paddingStart">@dimen/_30sdp</dimen>
     <dimen name="txt_btn_paddingEnd">@dimen/_30sdp</dimen>
+
+    <dimen name="heading_txt_size">@dimen/_18sdp</dimen>
 </resources>
