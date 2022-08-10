@@ -1,8 +1,9 @@
 package com.example.ohmyw8;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class NewPasswordActivity extends AppCompatActivity {
 
@@ -10,5 +11,9 @@ public class NewPasswordActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_password);
+    }
+
+    public void backNewPass(View view) {
+        onBackPressed();
     }
 }
