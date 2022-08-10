@@ -8,6 +8,7 @@
     tools:context=".SignUpActivity">
 
     <ImageView
+        android:onClick="backSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_5sdp"
@@ -136,6 +137,7 @@
             android:paddingTop="@dimen/_12sdp"
             android:paddingBottom="@dimen/_12sdp"
             android:text="Sign up"
+            android:onClick="signUpAccount"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="@dimen/_12sdp"
@@ -160,6 +162,7 @@
             android:textColor="@color/white" />
 
         <TextView
+            android:onClick="login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_5sdp"
