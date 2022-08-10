@@ -21,6 +21,7 @@ public class OTPForgotActivity extends AppCompatActivity {
 
         initViews();
 
+        //final OTP string
         String code = Helpers.rS(otpETs[0]) + Helpers.rS(otpETs[1]) +
                 Helpers.rS(otpETs[2]) + Helpers.rS(otpETs[3]) + Helpers.rS(otpETs[4])
                 + Helpers.rS(otpETs[5]);
