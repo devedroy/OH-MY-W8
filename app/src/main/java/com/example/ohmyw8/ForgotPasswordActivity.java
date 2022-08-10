@@ -17,4 +17,8 @@ public class ForgotPasswordActivity extends AppCompatActivity {
     public void submitPhone(View view) {
         startActivity(new Intent(this, OTPForgotActivity.class));
     }
+
+    public void backForgotPass(View view) {
+        onBackPressed();
+    }
 }
