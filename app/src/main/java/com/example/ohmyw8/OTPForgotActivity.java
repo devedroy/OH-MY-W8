@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class OTPForgotActivity extends AppCompatActivity {
 
-
+// otp changes
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
