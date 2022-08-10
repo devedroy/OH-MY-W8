@@ -27,5 +27,4 @@ public class OTPForgotActivity extends AppCompatActivity {
     public void resendOTP(View view) {
     }
 
-
 }

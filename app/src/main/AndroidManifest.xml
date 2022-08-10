@@ -17,6 +17,9 @@
             android:name=".MNVActivity"
             android:exported="false" />
         <activity
+            android:name=".NewPasswordActivity"
+            android:exported="false" />
+        <activity
             android:name=".OTPForgotActivity"
             android:exported="false" />
         <activity
