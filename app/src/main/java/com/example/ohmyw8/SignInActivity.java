@@ -21,4 +21,8 @@ public class SignInActivity extends AppCompatActivity {
     public void backSignIn(View view) {
         onBackPressed();
     }
+
+    public void signUp(View view) {
+        startActivity(new Intent(this, SignUpActivity.class));
+    }
 }
