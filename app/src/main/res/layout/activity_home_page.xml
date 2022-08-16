@@ -106,7 +106,7 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="null"
+                    android:background="@null"
                     android:hint="Search dishes, restaurants, locations"
                     android:inputType="phone"
                     android:singleLine="true"
@@ -151,6 +151,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
+                    android:onClick="viewAllRestaurants"
                     android:text="View all"
                     android:textColor="@color/white" />
             </RelativeLayout>
@@ -160,6 +161,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_30sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
+                android:id="@+id/rvRestaurant"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
             <TextView
