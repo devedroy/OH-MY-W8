@@ -4,15 +4,18 @@ import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.ohmyw8.adapters.BannerAdapter;
 import com.example.ohmyw8.adapters.RecentOrderAdapter;
 import com.example.ohmyw8.adapters.RestaurantAdapter;
+import com.example.ohmyw8.adapters.RestaurantNearYouAdapter;
 import com.example.ohmyw8.data.BannerData;
 import com.example.ohmyw8.data.RecentOrderData;
 import com.example.ohmyw8.data.RestaurantData;
+import com.example.ohmyw8.data.RestaurantsNearYouData;
 
 import me.relex.circleindicator.CircleIndicator3;
 
@@ -20,7 +23,7 @@ public class HomePageActivity extends AppCompatActivity {
 
     ViewPager2 vpBanners;
     CircleIndicator3 tlIndicator;
-    RecyclerView rvRestaurant, rvRecentOrder;
+    RecyclerView rvRestaurant, rvRecentOrder, rvRestaurantNearYou;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +49,12 @@ public class HomePageActivity extends AppCompatActivity {
         RecentOrderAdapter recentOrderAdapter = new RecentOrderAdapter(this, recentOrderData.loadRecentOrderList());
         rvRecentOrder.setAdapter(recentOrderAdapter);
         recentOrderAdapter.notifyDataSetChanged();
+
+        RestaurantsNearYouData restaurantsNearYouData = new RestaurantsNearYouData();
+        RestaurantNearYouAdapter restaurantNearYouAdapter = new RestaurantNearYouAdapter(this, restaurantsNearYouData.loadRestaurantNearYouList());
+        rvRestaurantNearYou.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false));
+        rvRestaurantNearYou.setAdapter(recentOrderAdapter);
+        restaurantNearYouAdapter.notifyDataSetChanged();
     }
 
     private void initViews() {
@@ -53,6 +62,7 @@ public class HomePageActivity extends AppCompatActivity {
         tlIndicator = findViewById(R.id.tlIndicator);
         rvRestaurant = findViewById(R.id.rvRestaurant);
         rvRecentOrder = findViewById(R.id.rvRecentOrder);
+        rvRestaurantNearYou = findViewById(R.id.rvRestaurantNearYou);
     }
 
     public void locationSelector(View view) {
