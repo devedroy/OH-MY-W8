@@ -18,7 +18,7 @@ public class HomePageActivity extends AppCompatActivity {
 
     ViewPager2 vpBanners;
     CircleIndicator3 tlIndicator;
-    RecyclerView rvRestaurant;
+    RecyclerView rvRestaurant, rvRecentOrder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +45,7 @@ public class HomePageActivity extends AppCompatActivity {
         vpBanners = findViewById(R.id.vpBanners);
         tlIndicator = findViewById(R.id.tlIndicator);
         rvRestaurant = findViewById(R.id.rvRestaurant);
-
+        rvRecentOrder = findViewById(R.id.rvRecentOrder);
     }
 
     public void locationSelector(View view) {

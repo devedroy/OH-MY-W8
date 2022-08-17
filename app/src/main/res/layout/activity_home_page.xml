@@ -175,6 +175,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_10sdp"
                 app:spanCount="2"
+                android:id="@+id/rvRecentOrder"
                 android:layout_marginBottom="@dimen/_10sdp"
                 app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
 

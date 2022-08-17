@@ -33,6 +33,7 @@
         android:textSize="@dimen/heading_txt_size" />
 
     <RelativeLayout
+        android:id="@+id/rltop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvHeading"
@@ -120,9 +121,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/rltop"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/_70sdp"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -197,9 +198,9 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginBottom="@dimen/_10sdp"
             android:background="@drawable/rect_rounded_white"
+            android:onClick="signUp"
             android:paddingStart="@dimen/_45sdp"
             android:paddingTop="@dimen/txt_btn_paddingTop"
-            android:onClick="signUp"
             android:paddingEnd="@dimen/_45sdp"
             android:paddingBottom="@dimen/txt_btn_paddingBottom"
             android:text="Sign up"
