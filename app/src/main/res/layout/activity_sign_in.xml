@@ -111,6 +111,7 @@
             android:paddingTop="@dimen/_12sdp"
             android:paddingBottom="@dimen/_12sdp"
             android:text="Sign In"
+            android:onClick="signInSignIn"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="@dimen/_12sdp"
