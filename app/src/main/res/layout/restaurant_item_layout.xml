@@ -9,6 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:id="@+id/ivRestaurant"
         android:src="@mipmap/ic_launcher" />
 
     <LinearLayout
@@ -21,6 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_5sdp"
+            android:id="@+id/tvRestaurantName"
             android:text="Biryani Huts"
             android:textColor="@color/white" />
 
@@ -43,12 +45,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="4.5"
+                    android:id="@+id/tvRestaurantRating"
                     android:textColor="@color/white" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/_2sdp"
+                    android:id="@+id/ivRestaurantRating"
                     android:src="@drawable/star"
                     app:tint="@color/white" />
             </LinearLayout>
@@ -56,6 +60,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/tvTimeRequired"
                 android:layout_marginStart="@dimen/_3sdp"
                 android:background="@drawable/rect_rounded_white_strokes"
                 android:paddingStart="@dimen/_5sdp"
@@ -67,6 +72,7 @@
 
         <TextView
             android:layout_width="wrap_content"
+            android:id="@+id/tvRestaurantAddress"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_3sdp"
             android:layout_marginTop="@dimen/_3sdp"
@@ -96,6 +102,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:id="@+id/tvAmount"
                 android:layout_marginStart="@dimen/_5sdp"
                 android:layout_marginEnd="@dimen/_3sdp"
                 android:fontFamily="serif-monospace"
