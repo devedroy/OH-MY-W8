@@ -9,7 +9,7 @@ import java.util.List;
 public class RecentOrderData {
     private List<RecentOrder> recentOrderList = new ArrayList<>();
 
-    public List<RecentOrder> loadRestaurantList() {
+    public List<RecentOrder> loadRecentOrderList() {
 
         recentOrderList.add(new RecentOrder(
                 R.drawable.img,

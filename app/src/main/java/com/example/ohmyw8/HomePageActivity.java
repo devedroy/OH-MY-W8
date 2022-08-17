@@ -8,8 +8,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.ohmyw8.adapters.BannerAdapter;
+import com.example.ohmyw8.adapters.RecentOrderAdapter;
 import com.example.ohmyw8.adapters.RestaurantAdapter;
 import com.example.ohmyw8.data.BannerData;
+import com.example.ohmyw8.data.RecentOrderData;
 import com.example.ohmyw8.data.RestaurantData;
 
 import me.relex.circleindicator.CircleIndicator3;
@@ -39,6 +41,11 @@ public class HomePageActivity extends AppCompatActivity {
         RestaurantAdapter restaurantAdapter = new RestaurantAdapter(this, restaurantData.loadRestaurantList());
         rvRestaurant.setAdapter(restaurantAdapter);
         restaurantAdapter.notifyDataSetChanged();
+
+        RecentOrderData recentOrderData = new RecentOrderData();
+        RecentOrderAdapter recentOrderAdapter = new RecentOrderAdapter(this, recentOrderData.loadRecentOrderList());
+        rvRecentOrder.setAdapter(recentOrderAdapter);
+        recentOrderAdapter.notifyDataSetChanged();
     }
 
     private void initViews() {
